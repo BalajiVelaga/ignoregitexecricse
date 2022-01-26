@@ -1,5 +1,11 @@
 node_modules/
-find . -type f -name *.env | cut -c 3- >> .gitignore
-find . -type f -name z* | cut -c 3- >> .gitignore
-find . -type f -name /artifacts/ | cut -c 3- >> .gitignore
+#find . -type f -name *.env | cut -c 3- >> .gitignore
+#find . -type f -name z* | cut -c 3- >> .gitignore
+#find . -type f -name /artifacts/ | cut -c 3- >> .gitignore
+
+    # exclude everything except directory foo/bar
+    /*
+    !/artifacts/
+    /z*
+    /*.env
 
